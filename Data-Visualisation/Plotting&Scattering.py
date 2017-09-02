@@ -21,9 +21,4 @@ plt.show()
 
 #Clearing the buffer
 plt.clf()
-
-
-
-
-
 plt.plot()
