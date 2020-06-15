@@ -1,0 +1,119 @@
+<html>
+<body style="background-color: #ffe6e6">
+<style type="text/css">
+    .label1, .label2,.label3, .label4,.label5, .label6,.label7, .label8,.label9, .label10,
+    .label11, .label12{
+        font-size: 25px;
+    }
+    .field1, .field2, .field3, .field4, .field5, .field6, .field7, .field8, .field9, .field10, 
+    .field11, .field12{
+        height: 25px;
+        width: 300px;
+        margin-left: 25px;
+    }
+    .field3{
+        margin-left: 80px
+    }
+    .field4{
+        margin-left: 40px
+    }
+    .field5{
+        margin-left: 65px
+    }
+    .field6{
+        margin-left: 35px
+    }
+    .field7{
+        margin-left: 47px
+    }
+    .field8{
+        margin-left: 47px
+    }
+    .field9{
+        margin-left: 80px
+    }
+    .field10{
+        margin-left: 2px
+    }
+    .field11{
+        margin-left: 60px
+    }
+    .field12{
+        margin-left: 30px
+    }
+    .button {
+  background-color: #ff3333; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+}
+</style>
+<title>Main Page</title>
+<h1 align="center" style="font-family: sans-serif;margin-top: 35px;margin-right: 100px;font-size: 45px;
+color: #ff8080;text-shadow: 1px 2px 1px">Air Quality Detector</h1>
+<div  style="border-style: double;height: 470px;box-sizing: border-box;width: 80%;margin-left: 100px;border-color:#ff9999;border-radius: 5px;border-width: 5px;box-shadow: 1px 1px 1px 1px #ff9999">
+    <form action = "{{ url_for('prediction') }}" method="post">
+        {{ form.hidden_tag() }}
+        <p  style="padding-top: 30px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.location.label(class="label1") }}
+            {{ form.location(class="field1") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.type1.label(class="label2")}}
+            {{ form.type1(class_="field2") }}
+        <p  style="padding-top: 10px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.so2.label(class="label3") }}
+            {{ form.so2(size=32, class="field3") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.no2.label(class="label4")}}
+            {{ form.no2(size=32, class="field4") }}
+        </p>
+        <p  style="padding-top: 10px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.rspm.label(class="label5") }}
+            {{ form.rspm(size=32, class="field5") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.spm.label(class="label6")}}
+            {{ form.spm(size=32, class="field6") }}
+        </p>
+        <p  style="padding-top: 10px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.pm2_5.label(class="label7") }}
+            {{ form.pm2_5(size=32, class="field7") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.SOi.label(class="label8")}}
+            {{ form.SOi(size=32, class="field8") }}
+        </p>
+        <p  style="padding-top: 10px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.Noi.label(class="label9") }}
+            {{ form.Noi(size=32, class="field9") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.RSPMi.label(class="label10")}}
+            {{ form.RSPMi(size=32, class="field10") }}
+        </p>
+        <p  style="padding-top: 10px;padding-left: 70px;text-shadow: 1px 1px 1px #ff6666">
+            {{ form.SPMi.label(class="label11") }}
+            {{ form.SPMi(size=32, class="field11") }}
+        </p>
+        <p  style="padding-top: -10px;padding-left: 600px;text-shadow: 1px 1px 1px #ff6666; margin-top: -37px">
+            {{ form.PMi.label(class="label12")}}
+            {{ form.PMi(size=32, class="field12") }}
+        </p>
+        <p style="padding-top: -5px;padding-left: 470px;text-shadow: 1px 1px 1px #ff6666;">
+            {{ form.submit(class = "button") }}
+        </p>
+    </form>
+</div>
+
+</body>
+</html>
