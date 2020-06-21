@@ -1,6 +1,5 @@
 ### R
-
-for quick reference
+  ...for quick reference
 
 #### Getting Started
 
@@ -8,7 +7,8 @@ This ![link](https://www.digitalocean.com/community/tutorials/how-to-install-r-o
 
 <strong>Installing R packages from CRAN</strong>
 
-		``install.packages('txtplot')``
+		install.packages('txtplot')
+		library('txtplot')
 
 where `txtplot` is a library that outputs ASCII graphs that include scatterplot, line plot, density plot, acf and bar charts.
 
