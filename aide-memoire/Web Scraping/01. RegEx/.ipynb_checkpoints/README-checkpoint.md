@@ -84,7 +84,8 @@ Depending on the pupose we can Fine Tune our match depending on how "clean" our 
 
 s = 'X-Miracle-: '
 
-## The following example is not a match because there;s a whitespace character between first character and the colon.
+# The following example is not a match because there;s a whitespace character between
+# first character and the colon.
 not_a_match = 'X-Plane is behing schedule: two weeks'
 
 
