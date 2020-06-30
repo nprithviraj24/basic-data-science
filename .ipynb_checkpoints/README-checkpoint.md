@@ -3,6 +3,12 @@
 
   ...in Python and R.
 
+
+| [Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/) | [AI Resources](https://storage.googleapis.com/deepmind-media/research/New_AtHomeWithAI%20resources.pdf) 	|
+|-	|-	|
+
+
+
 ##### Data Science is a field that can be broadly defined that is made up of following activities.
 Source: [50 years of Data Science](http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf)
 
