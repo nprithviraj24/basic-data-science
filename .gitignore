@@ -5,3 +5,5 @@ subreddit_dataisbeautiful/
 aide-memoire/**/.ipynb_checkpoints/**
 aide-memoire/stats/.ipynb_checkpoints/random_variable-checkpoint.ipynb
 aide-memoire/stats/.ipynb_checkpoints/random_variable-checkpoint.ipynb
+.vscode/settings.json
+Models/05. Dorothea/_ignore.py
