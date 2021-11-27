@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Classification for Heart disease Prediciton</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-4 text-center">
+            <h2> Hybrid Classification for Heart disease Prediciton</h2>
+           
+        </div>
+        <form  method="post">
+            <div class="row g-3 justify-content-center">
+                <div class="col-sm-2">
+                    <label for="age" class="form-label">age</label>
+                    <input type="number" step="any" name="age" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="weight" class="form-label">weight</label>
+                    <input type="number" step="any" name="weight" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="length" class="form-label">length</label>
+                    <input type="number" step="any" name="length" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="bmi" class="form-label">bmi</label>
+                    <input type="number" step="any" name="bmi" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="htn" class="form-label">htn</label>
+                    <input type="number" step="any" name="htn" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="bp" class="form-label">bp</label>
+                    <input type="number" step="any" name="bp" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="typical chest pain" class="form-label">typical chest pain</label>
+                    <input type="number" step="any" name="typical chest pain" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="atypical" class="form-label">atypical</label>
+                    <input type="number" step="any" name="atypical" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="nonanginal" class="form-label">nonanginal</label>
+                    <input type="number" step="any" name="nonanginal" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="fbs" class="form-label">fbs</label>
+                    <input type="number" step="any" name="fbs" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="cr" class="form-label">cr</label>
+                    <input type="number" step="any" name="cr" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="tg" class="form-label">tg</label>
+                    <input type="number" step="any" name="tg" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="ldl" class="form-label">ldl</label>
+                    <input type="number" step="any" name="ldl" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="hdl" class="form-label">hdl</label>
+                    <input type="number" step="any" name="hdl" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="bun" class="form-label">bun</label>
+                    <input type="number" step="any" name="bun" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="esr" class="form-label">esr</label>
+                    <input type="number" step="any" name="esr" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="hb" class="form-label">hb</label>
+                    <input type="number" step="any" name="hb" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="k" class="form-label">k</label>
+                    <input type="number" step="any" name="k" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="wbc" class="form-label">wbc</label>
+                    <input type="number" step="any" name="wbc" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="lymph" class="form-label">lymph</label>
+                    <input type="number" step="any" name="lymph" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="neut" class="form-label">neut</label>
+                    <input type="number" step="any" name="neut" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="plt" class="form-label">plt</label>
+                    <input type="number" step="any" name="plt" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="ef-tte" class="form-label">ef-tte</label>
+                    <input type="number" step="any" name="ef-tte" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="region-rwma" class="form-label">region rwma</label>
+                    <input type="number" step="any" name="region-rwma" class="form-control" placeholder="0" required>
+                </div>
+                <div class="col-sm-3 py-3">
+                    <button class="w-100 btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
